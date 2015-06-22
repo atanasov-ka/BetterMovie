@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: jfree:jfreechart:1.0.8a">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jfree/jfreechart/1.0.8a/83c3b0d8fcd961bd3c9a702f59fe771351e47420/jfreechart-1.0.8a.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jfree/jfreechart/1.0.8a/f8e10e9e12db5ea089d9156571d3a854d6c7e278/jfreechart-1.0.8a-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

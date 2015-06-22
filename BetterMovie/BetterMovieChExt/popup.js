@@ -1,0 +1,1 @@
+$("#server").attr("value", globalServer);

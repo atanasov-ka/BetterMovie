@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.4.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+apply plugin: 'war'
+apply plugin: 'maven-publish'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.json:json:20141113")
+
+    compile("org.apache.mahout:mahout-core:0.6") {
+        exclude module: 'hadoop-core'
+        exclude module: 'uncommons-maths'
+    }
+    testCompile("junit:junit")
+
+    compile 'org.apache.hadoop:hadoop-core:0.20.2'
+    compile 'com.kenai.nbpwr:org-apache-commons-io:1.3.1-201002241208'
+    compile 'org.uncommons.maths:uncommons-maths:1.2.2a'
+    compile 'org.apache.commons:commons-io:1.3.2'
+    compile 'org.jsoup:jsoup:1.8.2'
+    compile 'log4j:log4j:1.2.12'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+task deployInTomcat(type: Copy, dependsOn: war ) {
+    from war
+    into project.file('D:\\Distrib\\apache-tomcat-8.0.21-windows-x64\\apache-tomcat-8.0.21\\webapps')
+    //into project.file('D:\\Apache\\apache-tomcat-7.0.57\\webapps')
+}
+

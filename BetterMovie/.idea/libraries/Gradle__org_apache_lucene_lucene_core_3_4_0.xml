@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.lucene:lucene-core:3.4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/3.4.0/4426bf0764ec5fa634abca236b469d2519c74f65/lucene-core-3.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/3.4.0/5fb2a27ccf64ef71ffc369a897769e8179df7e81/lucene-core-3.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
